@@ -27,5 +27,10 @@ function getDiskIO() {
     return $return_set;
 }
 
+function getRandomData() {
+    // $val = shell_exec()
+    // this will return random values to the web page
+}
+
 ?>
 
