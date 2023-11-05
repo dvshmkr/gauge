@@ -28,8 +28,12 @@ function getDiskIO() {
 }
 
 function getRandomData() {
-    // $val = shell_exec()
-    // this will return random values to the web page
+    $val = rand(100, 200);
+    $loadset = new Dataset("loadset", "random", $val);
+    $return_set = $loadset;
+    msg("loadset: " . json_encode($loadset));
+    return $return_set;
+    
 }
 
 ?>

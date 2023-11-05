@@ -38,7 +38,7 @@
         if (xhr.readyState == 4) {
           if (xhr.status == 200) {
             let text = JSON.parse(xhr.responseText);
-            let load = parseFloat(text.loadset.data)*1000;
+            let load = parseFloat(text.loadset.data);
             // responseText.innerHTML = xhr.responseText;
             localTimer.stop();
             console.log("kB_read/s:", load);
